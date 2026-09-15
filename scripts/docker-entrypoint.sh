@@ -7,5 +7,5 @@ chown -R imagepool:imagepool "$data_dir"
 
 exec gosu imagepool streamlit run app.py \
   --server.address=0.0.0.0 \
-  --server.port=8501
+  --server.port=8503
 

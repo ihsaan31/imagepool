@@ -37,10 +37,10 @@ RUN groupadd --system imagepool \
 COPY --chown=imagepool:imagepool . .
 RUN chmod +x /app/scripts/docker-entrypoint.sh
 
-EXPOSE 8501
+EXPOSE 8503
 VOLUME ["/app/data"]
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=60s --retries=3 \
-    CMD curl --fail http://127.0.0.1:8501/_stcore/health || exit 1
+    CMD curl --fail http://127.0.0.1:8503/_stcore/health || exit 1
 
 ENTRYPOINT ["/app/scripts/docker-entrypoint.sh"]
