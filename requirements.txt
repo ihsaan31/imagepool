@@ -1,0 +1,9 @@
+streamlit==1.49.1
+bcrypt==4.3.0
+Pillow==11.3.0
+numpy==2.2.6
+faiss-cpu==1.11.0.post1
+torch==2.7.1
+torchvision==0.22.1
+open-clip-torch==2.32.0
+
